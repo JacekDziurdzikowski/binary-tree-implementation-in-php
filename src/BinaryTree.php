@@ -1,5 +1,4 @@
 <?php
-namespace jdz\BinaryTree;
 
 class BinaryTree
 {
