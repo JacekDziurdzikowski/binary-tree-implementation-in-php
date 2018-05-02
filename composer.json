@@ -1,0 +1,15 @@
+{
+    "name": "jdziurdzikowski/binary-tree-implementation",
+    "authors": [
+        {
+            "name": "Jacek Dziurdzikowski",
+            "email": "jacek.dziurdzikowski@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    }
+}
