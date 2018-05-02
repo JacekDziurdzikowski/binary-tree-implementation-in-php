@@ -60,4 +60,28 @@ class BinaryTree
         }
     }
 
+    public function inOrderDFSTraverse(){
+        if ($this->leftChild){
+            $this->leftChild->inOrderDFSTraverse();
+        }
+
+        echo ($this->value ?? 'null') . PHP_EOL;
+
+        if ($this->rightChild){
+            $this->rightChild->inOrderDFSTraverse();
+        }
+    }
+
+    public function postOrderDFSTraverse(){
+        if ($this->leftChild){
+            $this->leftChild->postOrderDFSTraverse();
+        }
+
+        if ($this->rightChild){
+            $this->rightChild->postOrderDFSTraverse();
+        }
+
+        echo ($this->value ?? 'null') . PHP_EOL;
+    }
+
 }
