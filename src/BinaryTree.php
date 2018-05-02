@@ -48,4 +48,16 @@ class BinaryTree
     }
 
 
+    public function preOrderDFSTraverse(){
+        echo ($this->value ?? 'null') . PHP_EOL;
+
+        if ($this->leftChild){
+            $this->leftChild->preOrderDFSTraverse();
+        }
+
+        if ($this->rightChild){
+            $this->rightChild->preOrderDFSTraverse();
+        }
+    }
+
 }

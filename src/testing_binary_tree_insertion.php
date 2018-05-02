@@ -17,6 +17,8 @@ $d_node = $b_node->rightChild;
 $e_node = $c_node->leftChild;
 $f_node = $c_node->rightChild;
 
+
+echo 'testing_binary_tree_inserstion.php:' . PHP_EOL;
 echo ($a_node->value ?? 'null') . PHP_EOL; #a
 echo ($b_node->value ?? 'null') . PHP_EOL; #b
 echo ($c_node->value ?? 'null') . PHP_EOL; #c
