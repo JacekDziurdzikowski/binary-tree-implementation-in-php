@@ -84,4 +84,30 @@ class BinaryTree
         echo ($this->value ?? 'null') . PHP_EOL;
     }
 
+
+    public function BFSTraverse($queue = null)
+    {
+        if ($queue === null) {
+            $queue = new \DS\Queue();
+            $queue->push($this);
+        }
+
+        if (!$queue->isEmpty()) {
+            $node = $queue->pop();
+            echo ($node->value ?? 'null') . PHP_EOL;
+        }
+
+        if ($this->leftChild) {
+            $queue->push($this->leftChild);
+        }
+
+        if ($this->rightChild) {
+            $queue->push($this->rightChild);
+        }
+
+        if (!$queue->isEmpty()){
+            $queue->peek()->BFSTraverse($queue);
+        }
+
+    }
 }
